@@ -26,6 +26,10 @@ class EpsonEPOSCommand {
     return {"id": "addLineSpace", "value": data};
   }
 
+  Map<String, dynamic> addDrawer(dynamic data) {
+    return {"id": "addDrawer", "value": data};
+  }
+
   Map<String, dynamic> addCut(EpsonEPOSCut data) {
     final cutData = _enumText(data);
     return {"id": "addCut", "value": cutData};
